@@ -5,6 +5,7 @@ define vault_client::cert_service (
   String $role,
   Array[String] $alt_names = [],
   Array[String] $ip_sans = [],
+  String $organisation = '',
   Integer $uid = 0,
   Integer $gid = 0,
   String $key_type = 'rsa',
