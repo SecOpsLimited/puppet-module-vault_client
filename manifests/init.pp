@@ -52,12 +52,12 @@ class vault_client (
   }
 
   ## build download URL
-  $download_url = regsubst(
-    $::vault_client::params::download_url,
-    '#VERSION#',
-    $version,
-    'G'
-  )
+  #$download_url = regsubst(
+  #  $::vault_client::params::download_url,
+  #  '#VERSION#',
+  #  $version,
+  #  'G'
+  #)
 
   # token path
   $config_path = "${::vault_client::config_dir}/config"
