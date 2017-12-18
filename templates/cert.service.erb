@@ -16,8 +16,8 @@ ExecStart=/opt/bin/vault-helper cert \
 <% if @ip_sans.length > 0 -%>
   '--ip-sans=<%= @ip_sans.join(',') %>' \
 <% end -%>
-<% if @organisation -%>
-  '--organisation=<%= @organisation %>' \
+<% if @organisation.length > 0 -%>
+  '--organisation=<%= @organisation.join(',') %>' \
 <% end -%>
   --key-type=<%= @key_type %> \
   --key-bit-size=<%= @key_bits %> \
